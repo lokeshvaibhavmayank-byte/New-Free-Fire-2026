@@ -1,0 +1,60 @@
+import { EmoteDef } from '../types/game';
+
+export const EMOTES: EmoteDef[] = [
+  {
+    id: 'lol',
+    name: 'LOL',
+    icon: '😂',
+    description: 'The most infamous Free Fire emote. Point at eliminated enemies and burst into unstoppable laughter!',
+    duration: 3.5,
+    sound: 'lol',
+  },
+  {
+    id: 'tea',
+    name: 'Tea Time',
+    icon: '☕',
+    description: 'Classy afternoon royal high-tea. Relax with a golden teapot while opponents scramble for cover.',
+    duration: 4.0,
+    sound: 'tea',
+  },
+  {
+    id: 'pushup',
+    name: 'One-Finger Push Up',
+    icon: '💪',
+    description: 'Flex supreme physical dominance by executing lightning one-finger pushups in full combat gear.',
+    duration: 3.8,
+    sound: 'pushup',
+  },
+  {
+    id: 'flag',
+    name: 'Booyah Flag',
+    icon: '🚩',
+    description: 'Slam the glowing Free Fire MAX golden victory banner directly into the Bermuda battlefield.',
+    duration: 4.2,
+    sound: 'flag',
+  },
+  {
+    id: 'threaten',
+    name: 'Threaten',
+    icon: '☠️',
+    description: 'Intimidating throat-slash gesture that sends chills down the spines of enemy squads.',
+    duration: 2.8,
+    sound: 'threaten',
+  },
+  {
+    id: 'applause',
+    name: 'Applause',
+    icon: '👏',
+    description: 'Mocking standing ovation for opponents who tried their best before catching a headshot.',
+    duration: 3.0,
+    sound: 'applause',
+  },
+  {
+    id: 'dance',
+    name: 'Doggie Dance',
+    icon: '🕺',
+    description: 'Energetic celebratory bounce dance guaranteed to raise squad morale.',
+    duration: 3.6,
+    sound: 'dance',
+  },
+];

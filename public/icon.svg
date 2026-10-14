@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="60%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Shield -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="94" fill="none" stroke="url(#gold)" stroke-width="8" opacity="0.8"/>
+
+  <!-- Flame Wings -->
+  <path d="M120 340 C90 260, 110 180, 200 130 C170 170, 180 230, 210 260 C230 200, 270 160, 312 130 C290 190, 320 250, 350 270 C370 210, 420 180, 400 340 C370 410, 280 430, 256 430 C220 430, 140 410, 120 340 Z" fill="url(#flame)" filter="url(#glow)"/>
+
+  <!-- Inner Golden Skull / Crosshair Shield -->
+  <circle cx="256" cy="260" r="75" fill="#09090b" stroke="url(#gold)" stroke-width="8"/>
+  <circle cx="256" cy="260" r="45" fill="none" stroke="#ef4444" stroke-width="6"/>
+
+  <!-- Crosshair Spikes -->
+  <rect x="251" y="170" width="10" height="30" fill="url(#gold)" rx="5"/>
+  <rect x="251" y="320" width="10" height="30" fill="url(#gold)" rx="5"/>
+  <rect x="166" y="255" width="30" height="10" fill="url(#gold)" rx="5"/>
+  <rect x="316" y="255" width="30" height="10" fill="url(#gold)" rx="5"/>
+
+  <!-- "FREE FIRE" Text -->
+  <text x="256" y="395" font-family="'Impact', 'Arial Black', sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">
+    FREE FIRE
+  </text>
+
+  <!-- "MAX" Golden Ribbon -->
+  <rect x="176" y="415" width="160" height="42" rx="10" fill="url(#gold)" stroke="#ffffff" stroke-width="2"/>
+  <text x="256" y="446" font-family="'Impact', 'Arial Black', sans-serif" font-size="34" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="5">
+    MAX
+  </text>
+</svg>

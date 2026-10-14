@@ -1,0 +1,6 @@
+{
+  "name": "Free Fire MAX - Offline Battle Royale 3D",
+  "description": "Full-featured offline 3D Battle Royale inspired by Garena Free Fire MAX featuring Bermuda map, Alok & Chrono skills, signature weapons (MP40, M1887, AK47, AWM), Gloo Walls, safe zone storm, air drops, and Booyah victory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

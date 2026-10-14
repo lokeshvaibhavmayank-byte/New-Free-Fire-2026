@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #0b0e14;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+  }
+}
+
+.font-teko {
+  font-family: 'Teko', sans-serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-blackops {
+  font-family: 'Black Ops One', cursive;
+}
+
+/* Custom glowing clip-path buttons for Free Fire look */
+.ff-btn-skew {
+  clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
+.ff-btn-skew-reverse {
+  clip-path: polygon(0% 0%, calc(100% - 10px) 0%, 100% 100%, 10px 100%);
+}
+
+.ff-box-cut {
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+}
+
+.ff-glow-yellow {
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.45);
+}
+
+.ff-glow-red {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+}
+
+.ff-glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
+}
+
+/* Crosshair animations */
+@keyframes recoilShake {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+.recoil-active {
+  animation: recoilShake 0.08s ease-out;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(234, 179, 8, 0.5);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 179, 8, 0.8);
+}
+
